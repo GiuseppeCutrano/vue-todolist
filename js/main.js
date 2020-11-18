@@ -1,16 +1,16 @@
 const myApp = new Vue({
   el: "#root",
   data: {
-    itemList: [],
-    inputItem: "",
+    todoList: [],
+    inpuTodo: "",
 
   },
   methods: {
-    takeInput: function(){
-      this.itemList.push(this.inputItem)
+    inputList: function(){
+      this.todoList.push(this.inpuTodo)
     },
     removeItem: function(index){
-      this.itemList.splice(index, 1)
+      this.todoList.splice(index, 1)
     }
   }
 })
